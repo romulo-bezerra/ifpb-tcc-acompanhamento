@@ -1,0 +1,8 @@
+# Docker compose to build and run the eureka service
+version: '3.4'
+services:
+  eureka-server:
+    image: springcloud/eureka
+    container_name: eureka-server
+    ports: 
+      - "8761:8761"
